@@ -1,11 +1,12 @@
 package com.bean;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class MapFormat {
 	private String FORMATNAME;
 	private String username;
-	private Date time;
+	private Timestamp time;
 	private String content;
 	public String getFORMATNAME() {
 		return FORMATNAME;
@@ -22,7 +23,7 @@ public class MapFormat {
 	public Date getTime() {
 		return time;
 	}
-	public void setTime(Date time) {
+	public void setTime(Timestamp time) {
 		this.time = time;
 	}
 	public String getContent() {

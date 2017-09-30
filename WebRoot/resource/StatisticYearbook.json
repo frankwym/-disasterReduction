@@ -12,51 +12,51 @@
                 "text":"2011",
                 "nodes":[
                     {
-                        "text":"户籍人口(万人)",
+                        "text":"直行事故",
                         "value":"POPU_CARD"
                     },
                     {
-                        "text":"生产总值(亿元)",
+                        "text":"追尾事故",
                         "value":"GDP"
                     },
                     {
-                        "text":"公共财政收入(亿元)",
+                        "text":"超车事故",
                         "value":"FIAN_REVE"
                     },
                     {
-                        "text":"公共财政支出(亿元)",
+                        "text":"左转弯事故",
                         "value":"FIAN_EXP"
                     },
                     {
-                        "text":"规模以上工业企业(个)",
+                        "text":"右转变事故",
                         "value":"INDUS_ENT"
                     },
                     {
-                        "text":"固定资产投资(亿元)",
+                        "text":"窄道事故",
                         "value":"FIEX_ASS"
                     },
                     {
-                        "text":"社会消费品零售总额(亿元)",
+                        "text":"弯道事故",
                         "value":"GOODS_SALE"
                     },
                     {
-                        "text":"外贸进出口总额(亿美元)",
+                        "text":"坡道事故",
                         "value":"FORGN_TRADE"
                     },
                     {
-                        "text":"专利申请授权量(件)",
+                        "text":"会车事故",
                         "value":"PAT_APPL"
                     },
                     {
-                        "text":"小学校数(所)",
+                        "text":"超车事故",
                         "value":"PRIM_SCHOOL"
                     },
                     {
-                        "text":"卫生机构数(个)",
+                        "text":"停车事故",
                         "value":"HEALTH_CARE"
                     },
                     {
-                        "text":"邮政、电信局(所、厅)",
+                        "text":"事故总数",
                         "value":"POST_TELE_OFF"
                     }
                 ]
@@ -65,51 +65,51 @@
                 "text":"2012",
                 "nodes":[
                     {
-                        "text":"户籍人口(万人)",
+                        "text":"直行事故",
                         "value":"POPU_CARD"
                     },
                     {
-                        "text":"生产总值(亿元)",
+                        "text":"追尾事故",
                         "value":"GDP"
                     },
                     {
-                        "text":"公共财政收入(亿元)",
+                        "text":"超车事故",
                         "value":"FIAN_REVE"
                     },
                     {
-                        "text":"公共财政支出(亿元)",
+                        "text":"左转弯事故",
                         "value":"FIAN_EXP"
                     },
                     {
-                        "text":"规模以上工业企业(个)",
+                        "text":"右转变事故",
                         "value":"INDUS_ENT"
                     },
                     {
-                        "text":"固定资产投资(亿元)",
+                        "text":"窄道事故",
                         "value":"FIEX_ASS"
                     },
                     {
-                        "text":"社会消费品零售总额(亿元)",
+                        "text":"弯道事故",
                         "value":"GOODS_SALE"
                     },
                     {
-                        "text":"外贸进出口总额(亿美元)",
+                        "text":"坡道事故",
                         "value":"FORGN_TRADE"
                     },
                     {
-                        "text":"专利申请授权量(件)",
+                        "text":"会车事故",
                         "value":"PAT_APPL"
                     },
                     {
-                        "text":"小学校数(所)",
+                        "text":"超车事故",
                         "value":"PRIM_SCHOOL"
                     },
                     {
-                        "text":"卫生机构数(个)",
+                        "text":"停车事故",
                         "value":"HEALTH_CARE"
                     },
                     {
-                        "text":"邮政、电信局(所、厅)",
+                        "text":"事故总数",
                         "value":"POST_TELE_OFF"
                     }
                 ]
@@ -117,51 +117,51 @@
                 "text":"2013",
                 "nodes":[
                     {
-                        "text":"户籍人口(万人)",
+                        "text":"直行事故",
                         "value":"POPU_CARD"
                     },
                     {
-                        "text":"生产总值(亿元)",
+                        "text":"追尾事故",
                         "value":"GDP"
                     },
                     {
-                        "text":"公共财政收入(亿元)",
+                        "text":"超车事故",
                         "value":"FIAN_REVE"
                     },
                     {
-                        "text":"公共财政支出(亿元)",
+                        "text":"左转弯事故",
                         "value":"FIAN_EXP"
                     },
                     {
-                        "text":"规模以上工业企业(个)",
+                        "text":"右转变事故",
                         "value":"INDUS_ENT"
                     },
                     {
-                        "text":"固定资产投资(亿元)",
+                        "text":"窄道事故",
                         "value":"FIEX_ASS"
                     },
                     {
-                        "text":"社会消费品零售总额(亿元)",
+                        "text":"弯道事故",
                         "value":"GOODS_SALE"
                     },
                     {
-                        "text":"外贸进出口总额(亿美元)",
+                        "text":"坡道事故",
                         "value":"FORGN_TRADE"
                     },
                     {
-                        "text":"专利申请授权量(件)",
+                        "text":"会车事故",
                         "value":"PAT_APPL"
                     },
                     {
-                        "text":"小学校数(所)",
+                        "text":"超车事故",
                         "value":"PRIM_SCHOOL"
                     },
                     {
-                        "text":"卫生机构数(个)",
+                        "text":"停车事故",
                         "value":"HEALTH_CARE"
                     },
                     {
-                        "text":"邮政、电信局(所、厅)",
+                        "text":"事故总数",
                         "value":"POST_TELE_OFF"
                     }
                 ]
@@ -170,51 +170,51 @@
                 "text":"2014",
                 "nodes":[
                     {
-                        "text":"户籍人口(万人)",
+                        "text":"直行事故",
                         "value":"POPU_CARD"
                     },
                     {
-                        "text":"生产总值(亿元)",
+                        "text":"追尾事故",
                         "value":"GDP"
                     },
                     {
-                        "text":"公共财政收入(亿元)",
+                        "text":"超车事故",
                         "value":"FIAN_REVE"
                     },
                     {
-                        "text":"公共财政支出(亿元)",
+                        "text":"左转弯事故",
                         "value":"FIAN_EXP"
                     },
                     {
-                        "text":"规模以上工业企业(个)",
+                        "text":"右转变事故",
                         "value":"INDUS_ENT"
                     },
                     {
-                        "text":"固定资产投资(亿元)",
+                        "text":"窄道事故",
                         "value":"FIEX_ASS"
                     },
                     {
-                        "text":"社会消费品零售总额(亿元)",
+                        "text":"弯道事故",
                         "value":"GOODS_SALE"
                     },
                     {
-                        "text":"外贸进出口总额(亿美元)",
+                        "text":"坡道事故",
                         "value":"FORGN_TRADE"
                     },
                     {
-                        "text":"专利申请授权量(件)",
+                        "text":"会车事故",
                         "value":"PAT_APPL"
                     },
                     {
-                        "text":"小学校数(所)",
+                        "text":"超车事故",
                         "value":"PRIM_SCHOOL"
                     },
                     {
-                        "text":"卫生机构数(个)",
+                        "text":"停车事故",
                         "value":"HEALTH_CARE"
                     },
                     {
-                        "text":"邮政、电信局(所、厅)",
+                        "text":"事故总数",
                         "value":"POST_TELE_OFF"
                     }
                 ]
@@ -222,51 +222,51 @@
                 "text":"2015",
                 "nodes":[
                     {
-                        "text":"户籍人口(万人)",
+                        "text":"直行事故",
                         "value":"POPU_CARD"
                     },
                     {
-                        "text":"生产总值(亿元)",
+                        "text":"追尾事故",
                         "value":"GDP"
                     },
                     {
-                        "text":"公共财政收入(亿元)",
+                        "text":"超车事故",
                         "value":"FIAN_REVE"
                     },
                     {
-                        "text":"公共财政支出(亿元)",
+                        "text":"左转弯事故",
                         "value":"FIAN_EXP"
                     },
                     {
-                        "text":"规模以上工业企业(个)",
+                        "text":"右转变事故",
                         "value":"INDUS_ENT"
                     },
                     {
-                        "text":"固定资产投资(亿元)",
+                        "text":"窄道事故",
                         "value":"FIEX_ASS"
                     },
                     {
-                        "text":"社会消费品零售总额(亿元)",
+                        "text":"弯道事故",
                         "value":"GOODS_SALE"
                     },
                     {
-                        "text":"外贸进出口总额(亿美元)",
+                        "text":"坡道事故",
                         "value":"FORGN_TRADE"
                     },
                     {
-                        "text":"专利申请授权量(件)",
+                        "text":"会车事故",
                         "value":"PAT_APPL"
                     },
                     {
-                        "text":"小学校数(所)",
+                        "text":"超车事故",
                         "value":"PRIM_SCHOOL"
                     },
                     {
-                        "text":"卫生机构数(个)",
+                        "text":"停车事故",
                         "value":"HEALTH_CARE"
                     },
                     {
-                        "text":"邮政、电信局(所、厅)",
+                        "text":"事故总数",
                         "value":"POST_TELE_OFF"
                     }
                 ]

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -74,10 +75,12 @@ public class SaveUserMap extends HttpServlet {
 	public int saveUserMap(String mapName, String userId,
 			String cutomizemaprecords) {
 		QueryRunner qr = new QueryRunner(JdbcUtils.getDataSource());
-		String sql = "insert into WHU_CUSTOMMAP (mapname, userid, cutomizemaprecords, createtime) values (  ?, ?,?, sysdate) ";
+		
+		String sql = "insert into WHU_CUSTOMMAP (mapname, userid, cutomizemaprecords, createtime) values (  ?, ?,?, ? ) ";
 		int code = -1;
 		try {
-			code = qr.update(sql, mapName, userId, cutomizemaprecords);
+			Date time= new java.sql.Date(new java.util.Date().getTime());
+			code = qr.update(sql, mapName, userId, cutomizemaprecords,time);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -88,10 +91,11 @@ public class SaveUserMap extends HttpServlet {
 	public int reSaveUserMAP(String mapName, String userId,
 			String cutomizemaprecords) {
 		QueryRunner qr = new QueryRunner(JdbcUtils.getDataSource());
-		String sql = "update WHU_CUSTOMMAP set cutomizemaprecords=?, time=sysdate  where mapname=? and userid=? ";
+		String sql = "update WHU_CUSTOMMAP set cutomizemaprecords=?, time=?  where mapname=? and userid=? ";
 		int code = -1;
 		try {
-			code = qr.update(sql,cutomizemaprecords,mapName,userId);
+			Date time= new java.sql.Date(new java.util.Date().getTime());
+			code = qr.update(sql,cutomizemaprecords,time,mapName,userId);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -104,3 +108,4 @@ public class SaveUserMap extends HttpServlet {
 		doGet(request, response);
 	}
 }
+

@@ -10,3 +10,5 @@
 /log4j.properties
 /proxy.config
 /remote-client.xml
+/jdbc1.properties
+/jdbc2.properties
