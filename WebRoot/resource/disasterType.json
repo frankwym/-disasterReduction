@@ -1,0 +1,42 @@
+[
+    {
+        "text": "是非得失ˮ",
+        "value": "都是ˮ",
+        "backColor": "#2d5990",
+        "color": "white",
+        "state": {
+            "expanded": "true"
+        },
+        "selectable": false,
+        "nodes": [
+            {
+                "text": "都是",
+                "value": "都是"
+            },
+            {
+                "text": "都是",
+                "value": "都是"
+            }
+        ]
+    },
+    {
+        "text": "都是",
+        "value": "都是",
+        "backColor": "#2d5990",
+        "color": "white",
+        "state": {
+            "expanded": "true"
+        },
+        "selectable": false,
+        "nodes": [
+            {
+                "text": "都是",
+                "value": "都是"
+            },
+            {
+                "text": "都是",
+                "value": "都是"
+            }
+        ]
+    }
+]

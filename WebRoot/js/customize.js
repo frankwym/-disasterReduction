@@ -65,7 +65,7 @@ $(function() {
 	 // checkLogin();
 	CutomizeMapRecords.userName= window.localStorage.getItem("username");
 	$(".scroll-content").mCustomScrollbar();
-	buildInterfaceOfSelectData();
+	//buildInterfaceOfSelectType();
 	$("#newMapModal").modal("show");
 	require(
 			[ "esri/map", "esri/layers/ArcGISTiledMapServiceLayer", "esri/dijit/Scalebar",
@@ -225,21 +225,27 @@ function stepShift() {
 	switch (currentStep) {
 		case 1:
 			$(".steps div:eq(0)").addClass('step-active');
-			buildInterfaceOfSelectData();
+			buildInterfaceOfSelectType();
 			break;
 		case 2:
 			$(".steps div:eq(1)").addClass('step-active');
-			buildInterfaceOfSelectMap();
+			buildInterfaceOfSelectData();
+			
 			break;
 		case 3:
 			$(".steps div:eq(2)").addClass('step-active');
-			buildInterfaceOfSelectFormat();
+			buildInterfaceOfSelectMap();
+			
 			break;
 		case 4:
 			$(".steps div:eq(3)").addClass('step-active');
+			buildInterfaceOfSelectFormat();
+		
+			break;
+		case 5:
+			$(".steps div:eq(4)").addClass('step-active');
 			progressCtr("show");
 			makeThematicMap();
-			break;
 		}
 	for ( var i = 0; i < currentStep - 1; i++) {
 		$(".steps div:eq(" + i + ")").addClass('step-visited');
@@ -247,13 +253,13 @@ function stepShift() {
 }
 $("#pre-step").click(function() {
 
-	if (currentStep > 1 && currentStep < 5) {
+	if (currentStep > 1 && currentStep < 6) {
 		currentStep--;
 		stepShift();
 	}
 });
 $("#next-step").click(function() {	
-	if (currentStep > 0 && currentStep < 4) {
+	if (currentStep > 0 && currentStep < 5) {
 		currentStep++;
 		stepShift();
 	}
@@ -388,6 +394,62 @@ $(".option-container li").click(
 			$(".option-container").find("img").removeClass("selected-image");
 			$(this).find("img").addClass("selected-image");
 		});
+
+//构建灾害类型选择页面
+function buildInterfaceOfSelectType() {
+	$("#data-content").empty();
+	//从json中填充灾害种类
+	$("#data-content").append("<div id=\"disasterType\" style=\"margin:0 20px\" ></div>");
+	$("#disasterType").append("<label >选择灾害种类：</label>");
+	$("#disasterType").append("<div class=\"col-sm-12\"><select id=\"disasterTypeSelection\"  class=\"selectpicker show-menu-arrow form-control\" multiple data-max-options=\"1\"></select></div>");
+	$("#data-content").append("<br/><br/><div id=\"mapType\" style=\"margin:20px\" ></div>");
+	$("#mapType").append("<label >选择图件种类：</label>");
+	$("#mapType").append("<div class=\"col-sm-12\"><select id=\"mapTypeSelection\" class=\"selectpicker show-menu-arrow form-control\" multiple data-max-options=\"1\"></select></div>");
+	
+//当灾害选择框变化时，图种选择框对应变化
+	$("#disasterTypeSelection").on('change',function(){
+		var selectText = $(this).find('option:selected').text();
+		$.getJSON("resource/disasterType.json",
+				function(data) {
+			$("#mapTypeSelection").empty();
+			var diaster=data;
+			for(var i=0;i<diaster.length;i++){
+				if(diaster[i].text==selectText){
+					for(var j=0;j<diaster[i].nodes.length;j++){
+						if(j==0){
+							$("#mapTypeSelection").append(
+									"<option selected>" +diaster[i].nodes[j].text+ "</option>");
+						}else{
+							$("#mapTypeSelection").append(
+									"<option>" +diaster[i].nodes[j].text+ "</option>");
+						}
+						
+					}
+					$("#mapTypeSelection").selectpicker("refresh");}
+			}
+			
+		});
+	});
+	$.getJSON("resource/disasterType.json",
+			function(data) {
+		$("#disasterTypeSelection").empty();
+		var diaster=data;
+		for(var i=0;i<diaster.length;i++){
+			if(i==0){
+				$("#disasterTypeSelection").append(
+						"<option selected>" +diaster[i].text+ "</option>");
+			}else{
+				$("#disasterTypeSelection").append(
+						"<option>" +diaster[i].text+ "</option>");
+			}
+			
+		}
+		$("#disasterTypeSelection").selectpicker("refresh");
+		$("#disasterTypeSelection").change();
+	});
+	
+				
+	}
 
 /* build the interface of selectData */
 function buildInterfaceOfSelectData() {
